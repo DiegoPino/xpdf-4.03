@@ -44,4 +44,6 @@ if (HAVE_SPLASH)
   add_library(splash
     $<TARGET_OBJECTS:splash_objs>
   )
+  find_package(PkgConfig REQUIRED)
+  pkg_search_module(LIBFREETYPE REQUIRED freetype)
 endif ()
