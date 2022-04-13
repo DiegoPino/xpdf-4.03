@@ -196,10 +196,8 @@ elseif (FREETYPE_INCLUDE_DIR_ft2build
 else ()
   message(STATUS "FreeType not found")
 endif ()
-if (HAVE_FREETYPE_H)
-  set(HAVE_SPLASH TRUE)
-endif ()
 
+set(HAVE_SPLASH TRUE)
 
 #--- look for zlib
 #find_package(ZLIB)
